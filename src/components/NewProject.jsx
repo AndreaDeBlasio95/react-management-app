@@ -6,7 +6,6 @@ import Modal from "./Modal.jsx";
 export default function NewProject({ onAdd, onCancel }) {
   const modal = useRef();
 
-  // to handle user input
   const title = useRef();
   const description = useRef();
   const dueDate = useRef();
@@ -44,10 +43,10 @@ export default function NewProject({ onAdd, onCancel }) {
         </p>
       </Modal>
       <div className="w-[35rem] mt-16">
-        <menu className="flex item-center justify-end gap-4 my-4">
+        <menu className="flex items-center justify-end gap-4 my-4">
           <li>
             <button
-              className="text-stone-800 hover:text-stone-950 mt-2"
+              className="text-stone-800 hover:text-stone-950"
               onClick={onCancel}
             >
               Cancel
